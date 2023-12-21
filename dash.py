@@ -5,7 +5,7 @@ import plost
 
 
 st.set_page_config(page_title="Github Repos Dashboard", page_icon=":chart_with_upwards_trend:",layout="wide")
-github_data = pd.read_csv("/Users/emily/Documents/Github/beacon-dash/archive/github_dataset.csv").drop_duplicates()
+github_data = pd.read_csv("archive/github_dataset.csv").drop_duplicates()
 length = github_data.shape[0]
 lang = github_data['language'].value_counts()
 language_count=pd.concat([lang.index.to_frame(),lang.to_frame()],axis=1)
