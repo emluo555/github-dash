@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plost 
-import matplotlib.pyplot as plt
 
 
 st.set_page_config(page_title="Github Repos Dashboard", page_icon=":chart_with_upwards_trend:",layout="wide")
