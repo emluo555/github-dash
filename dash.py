@@ -4,7 +4,7 @@ import numpy as np
 import plost 
 
 
-st.set_page_config(page_title="Github Repos Dashboard", page_icon=":chart_with_upwards_trend:",layout="wide")
+st.set_page_config(page_title="Github Repository Data", page_icon=":chart_with_upwards_trend:",layout="wide")
 github_data = pd.read_csv("archive/github_dataset.csv").drop_duplicates()
 length = github_data.shape[0]
 lang = github_data['language'].value_counts()
